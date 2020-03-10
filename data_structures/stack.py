@@ -1,3 +1,5 @@
+from utils.data_structures_visualization import DataStructuresVisualization
+
 class Stack:
 
     """
@@ -31,7 +33,7 @@ class Stack:
 
     def __repr__(self):
 
-        return "Stack: {0}".format(self.stack)
+        return "Stack:\n{0}".format(DataStructuresVisualization.stack(self))
 
     def stack_empty(self):
 
