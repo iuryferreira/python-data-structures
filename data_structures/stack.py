@@ -26,8 +26,12 @@ class Stack:
     def __init__(self, size):
         
         self.size = size
-        self.stack = [0] * size
+        self.stack = [None] * size
         self.top = 0
+
+    def __repr__(self):
+
+        return "Stack: {0}".format(self.stack)
 
     def stack_empty(self):
 
