@@ -48,8 +48,9 @@ class Queue:
 
         next_index = 0 if self.head == self.size else self.head
         if self.queue[next_index] is not None:
-            return True
-        return False
+            return False
+        self.head, self.tail = 0, 0
+        return True
 
     def enqueue(self, value):
 
