@@ -4,6 +4,25 @@ from data_structures.stack import Stack
 
 class Deque(Queue):
 
+    """
+    This class implements the Abstract Data Type (TAD'S) Queue, with it's main operations.
+    ps: Since the list in Python is dynamic, it is necessary to enter the size to limit the queue.
+
+    Params
+    ----------
+    size : int
+
+    Methods
+    -------
+    push_front(value)
+        Inserts an element at the head of the queue.
+
+    remove_back()
+        Removes an element at the tail of the queue.
+
+
+    """
+
     def __init__(self, size):
 
         super().__init__(size)
