@@ -1,7 +1,7 @@
-from utils.data_structures_visualization import DataStructuresVisualization
+from data_structures.utils.data_structures_visualization import DataStructuresVisualization
+
 
 class Stack:
-
     """
     This class implements the Abstract Data Type (TAD'S) stack, with it's main operations.
     ps: Since the list in Python is dynamic, it is necessary to enter the size to limit the stack.
@@ -26,7 +26,7 @@ class Stack:
     """
 
     def __init__(self, size):
-        
+
         self.size = size
         self.stack = [None] * size
         self.top = 0

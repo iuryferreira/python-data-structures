@@ -7,7 +7,7 @@ class DataStructuresVisualization:
 
         queue_visualization = ""
         for i in range(queue.size):
-            if i != queue.start:
+            if i != queue.head:
                 queue_visualization += " [   %s   ] " % queue.queue[i]
             else:
                 queue_visualization += " [→  %s  ←] " % queue.queue[i]
