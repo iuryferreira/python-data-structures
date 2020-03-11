@@ -24,9 +24,13 @@ class Deque(Queue):
         while not stack.is_empty():
             self.enqueue(stack.pop())
 
+    def remove_back(self):
 
-if __name__ == "__main__":
-    d = Deque(3)
-    d.enqueue(3)
-    d.push_front(3)
-    print(d)
+        if not self.is_empty():
+            self.tail = self.tail - 1
+            value = self.queue[self.tail]
+            self.queue[self.tail] = None
+            
+            return value
+
+        return "The queue is empty."
