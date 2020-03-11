@@ -1,7 +1,7 @@
-from utils.data_structures_visualization import DataStructuresVisualization
+from data_structures.utils.data_structures_visualization import DataStructuresVisualization
+
 
 class Stack:
-
     """
     This class implements the Abstract Data Type (TAD'S) stack, with it's main operations.
     ps: Since the list in Python is dynamic, it is necessary to enter the size to limit the stack.
@@ -18,15 +18,15 @@ class Stack:
     pop()
         Removes the element from the top of the stack.
 
-    stack_empty()
+    is_empty()
         Checks if the stack is empty.
 
-    stack_full()
+    is_full()
         Checks if the stack is full.
     """
 
     def __init__(self, size):
-        
+
         self.size = size
         self.stack = [None] * size
         self.top = 0
@@ -35,14 +35,14 @@ class Stack:
 
         return "Stack:\n{0}".format(DataStructuresVisualization.stack(self))
 
-    def stack_empty(self):
+    def is_empty(self):
 
         if self.top == 0:
             return True
         else:
             return False
 
-    def stack_full(self):
+    def is_full(self):
 
         if self.size == self.top:
             return True
@@ -51,7 +51,7 @@ class Stack:
 
     def push(self, value):
 
-        if self.stack_full():
+        if self.is_full():
             return "The stack is full."
         else:
             self.stack[self.top] = value
@@ -59,7 +59,7 @@ class Stack:
 
     def pop(self):
 
-        if self.stack_empty():
+        if self.is_empty():
             return "The stack is empty.."
         self.top = self.top - 1
         return self.stack[self.top]
