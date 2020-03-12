@@ -21,16 +21,16 @@ class LinkedList:
     Methods
     -------
     search(value_searched)
-        Searches for a node in the linked list.
+        Searches for a node.
 
     search_previous(value_searched)
         Fetches the node previous to the one containing the searched value.
 
     insert()
-        Insert an Node into the LinkedList.
+        Insert a node.
 
     remove()
-        Removes a node from the linked list.
+        Removes a node.
     """
 
     def __init__(self):
@@ -59,10 +59,10 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    def remove(self, value_searched):
+    def remove(self, value):
 
-        if value_searched == self.head.value:
+        if value == self.head.value:
             self.head = self.head.next
         else:
-            node_prev = self.search_previous(value_searched)
+            node_prev = self.search_previous(value)
             node_prev.next = node_prev.next.next

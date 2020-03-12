@@ -6,6 +6,7 @@ class Deque(Queue):
 
     """
     This class implements the Abstract Data Type (TAD'S) Queue, with it's main operations.
+
     ps: Since the list in Python is dynamic, it is necessary to enter the size to limit the queue.
 
     Params
@@ -14,11 +15,23 @@ class Deque(Queue):
 
     Methods
     -------
+    enqueue(value)
+        Insert an element into the deque.
+
+    dequeue()
+        Removes the element from the front of the deque.
+
+    is_empty()
+        Checks if the deque is empty.
+
+    is_full()
+        Checks if the deque is full.
+
     push_front(value)
-        Inserts an element at the head of the queue.
+        Inserts an element at the head.
 
     remove_back()
-        Removes an element at the tail of the queue.
+        Removes an element at the tail.
 
 
     """
