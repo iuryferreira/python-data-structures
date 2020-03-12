@@ -1,8 +1,10 @@
-# Data Structures using Python
+<h1 align="center">Data Structure</h1>
 
 ### Hello! ✌
 
 This repository contains the implementations of the most used data structures, written in Python, implemented during the Data Structure discipline at IFRN.
+
+## Contents
 
 Currently, the following structures are included:
 

@@ -43,7 +43,7 @@ class DoublyLinkedList(LinkedList):
 
     def __repr__(self):
 
-        return "DoublyLinkedList: {0}".format(DataStructuresVisualization.doublylinkedlist(self))
+        return "\n\nDoublyLinkedList: {0}\n".format(DataStructuresVisualization.doublylinkedlist(self))
 
     def insert(self, node):
 

@@ -35,7 +35,7 @@ class Queue:
 
     def __repr__(self):
 
-        return "Queue: {0}".format(DataStructuresVisualization.queue(self))
+        return "\n\nQueue: {0}\n".format(DataStructuresVisualization.queue(self))
 
     def is_full(self):
 
