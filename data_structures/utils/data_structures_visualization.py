@@ -25,3 +25,30 @@ class DataStructuresVisualization:
                 item_visualization = "[→%s←]\n" % stack.stack[i]
                 stack_visualization += item_visualization.rjust(30, '_')
         return stack_visualization
+
+    @staticmethod
+    def linkedlist(linkedlist):
+
+        node = linkedlist.head
+        linkedlist_visualization = ""
+        while node is not None:
+            if linkedlist_visualization == "":
+                linkedlist_visualization = linkedlist_visualization + " HEAD[%d] " % node.value 
+            else:
+                linkedlist_visualization = linkedlist_visualization + " -> [%d] " % node.value 
+            node = node.next
+        linkedlist_visualization = linkedlist_visualization + " -> [None]"
+        return linkedlist_visualization
+    
+    @staticmethod
+    def doublylinkedlist(doublylinkedlist):
+        node = doublylinkedlist.head
+        doublylinkedlist_visualization = ""
+        while node is not None:
+            if doublylinkedlist_visualization == "":
+                doublylinkedlist_visualization = doublylinkedlist_visualization + " HEAD[%d] " % node.value 
+            else:
+                doublylinkedlist_visualization = doublylinkedlist_visualization + " ←→ [%d] " % node.value 
+            node = node.next
+        doublylinkedlist_visualization = doublylinkedlist_visualization + " → [None]"
+        return doublylinkedlist_visualization
