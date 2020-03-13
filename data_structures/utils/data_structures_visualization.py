@@ -1,4 +1,5 @@
 import math
+from tabulate import tabulate
 
 class DataStructuresVisualization:
 
@@ -52,3 +53,15 @@ class DataStructuresVisualization:
             node = node.next
         doublylinkedlist_visualization = doublylinkedlist_visualization + " → [None]"
         return doublylinkedlist_visualization
+
+    @staticmethod
+    def direct_address_table(table):
+
+        table_visualization = []
+        headers = ["Key", "Value"]
+        for value in table:
+            table_visualization.append([str(value), value])
+
+        return tabulate(table_visualization,headers, tablefmt="fancy_grid")
+            
+
