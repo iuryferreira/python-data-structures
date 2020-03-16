@@ -21,7 +21,7 @@ class DoublyLinkedList(LinkedList):
 
     Methods
     -------
-    search(value_searched)
+    search(value)
         Searches for a node.
 
     insert(node)

@@ -20,10 +20,10 @@ class LinkedList:
 
     Methods
     -------
-    search(value_searched)
+    search(value)
         Searches for a node.
 
-    search_previous(value_searched)
+    search_previous(value)
         Fetches the node previous to the one containing the searched value.
 
     insert()
@@ -41,16 +41,16 @@ class LinkedList:
 
         return "LinkedList: {0}".format(DataStructuresVisualization.linkedlist(self))
 
-    def search(self, value_searched):
+    def search(self, value):
 
         node = self.head
-        while node is not None and node.value != value_searched:
+        while node is not None and node.value != value:
             node = node.next
         return node
 
-    def search_previous(self, value_searched):
+    def search_previous(self, value):
         node = self.head
-        while node is not None and node.next.value != value_searched:
+        while node is not None and node.next.value != value:
             node = node.next
         return node
 

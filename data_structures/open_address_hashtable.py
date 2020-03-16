@@ -4,6 +4,10 @@ from data_structures.utils.data_structures_visualization import DataStructuresVi
 
 class OpenAddressHashTable(HashTable):
 
+    """
+        This class inherits from HashTable, using open address collision treatment.
+    """
+
     def __init__(self, size):
 
         super().__init__(size)
@@ -56,12 +60,20 @@ class OpenAddressHashTable(HashTable):
 
 class OpenAddressHashTableLinearProbing(OpenAddressHashTable):
 
+    """
+        This class inherits from OpenAddressHashTable, and implements the linear hash function.
+    """
+
     def __init__(self, size):
 
         super().__init__(size)
 
 
 class OpenAddressHashTableQuadraticProbing(OpenAddressHashTable):
+
+    """
+        This class inherits from OpenAddressHashTable, and implements the quradratic hash function.
+    """
 
     def __init__(self, size, c1, c2):
 
