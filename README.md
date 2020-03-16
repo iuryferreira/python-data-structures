@@ -14,5 +14,6 @@ Currently, the following structures are included:
 4. Linked List
 5. Doubly Linked List
 6. Direct Address Table
+7. Hash Table
 
 The structures are being added as they are being implemented, if you still don't have one you need, wait a while. 😁
