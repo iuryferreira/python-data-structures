@@ -13,5 +13,6 @@ Currently, the following structures are included:
 3. Double-ended Queue
 4. Linked List
 5. Doubly Linked List
+6. Direct Address Table
 
 The structures are being added as they are being implemented, if you still don't have one you need, wait a while. 😁
