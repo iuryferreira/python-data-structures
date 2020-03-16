@@ -64,4 +64,15 @@ class DataStructuresVisualization:
 
         return tabulate(table_visualization,headers, tablefmt="fancy_grid")
             
+    @staticmethod
+    def open_address_hash_table(table):
+        
+        table_visualization = []
+        headers = ["Key", "Value"]
+        pos = 0
+        for value in table:
+            table_visualization.append([str(pos), value])
+            pos += 1
+
+        return tabulate(table_visualization,headers, tablefmt="fancy_grid")
 
